@@ -10,7 +10,7 @@ using namespace std;
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(0);
-    freopen("input.txt","rt",stdin);
+    // freopen("input.txt","rt",stdin);
     stack<int> S;
     deque<char> Q;
     int n; cin>>n;
@@ -31,7 +31,6 @@ int main(){
             // cout<<"push: "<<k<<endl;
             k++;
             Q.push_back('+');
-            if(k>n) break;
         }
         if(tmp==S.top()){
             S.pop();
@@ -48,8 +47,6 @@ int main(){
             cout<<Q.front()<<'\n';
             Q.pop_front();
         }
-        
-
     }else {
         cout<<"NO"<<'\n';
     }
