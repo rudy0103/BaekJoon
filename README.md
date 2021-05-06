@@ -10,9 +10,9 @@
 | :--: | :--------------------------: | :-----------------: | :------:  |
 | 00 | Data Structure | 자료구조 | [바로가기](./data_structure) |
 | 01 | Data Structure 2 | 자료구조 2 | [바로가기](./data_structure2) | 
-| 02 | Tree | 트리 | [바로가기](./tree) | 15 | 44 | ![status][Doing] |
-| 03 | Math | 수학 | [바로가기](./math) | 14 | 25 | ![status][Doing] |
-| 04 | Greedy | 탐욕법 | [바로가기](./greedy) | 26 | 60 | ![status][Doing] |
+| 02 | Tree | 트리 | [바로가기](./tree) |
+| 03 | Math | 수학 | [바로가기](./math) |
+| 04 | Greedy | 탐욕법 | [바로가기](./greedy) |
 | 05 | Dynamic Programming 1 | 동적계획법 1 | [바로가기](./dynamic_programming_1) | 
 | 06 | Dynamic Programming 2 | 동적계획법 2 | [바로가기](./dynamic_programming_2) | 
 | 07 | Two Pointer | 투 포인터 | [바로가기](./two_pointer) | 
