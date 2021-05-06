@@ -356,3 +356,4 @@ MigrationBackup/
 *.exe
 *.txt
 *.out
+*.md
