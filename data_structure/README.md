@@ -1,9 +1,9 @@
 # Data Structre (자료구조)
 
-(https://github.com/tony9402/baekjoon)에서 제공한 문제집입니다.
+https://github.com/tony9402/baekjoon 에서 제공한 문제집입니다.
 
 
-<br>
+
 
 [백준 문제집](https://www.acmicpc.net/workbook/view/6779)
 |          순번          |        추천 문제         |        문제 번호         |        문제 이름         |         난이도          |        나의 풀이         |
