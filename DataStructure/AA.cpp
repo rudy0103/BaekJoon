@@ -1,43 +1,43 @@
-
-#include<iostream>
-#include<string>
-#include<queue>
+#define _CRT_SECURE_NO_WARNINGS
+#include <cstdio>
+#include <algorithm>
+#include <deque>
 using namespace std;
 
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(0);
+int main() {
+    freopen("input.txt","rt",stdin);
+	int n;
+	scanf("%d", &n);
+	deque<pair<int, int>> d;
+	for (int i = 0; i < n; i++) {
+		int a;
+		scanf("%d", &a);
+		d.push_back(make_pair(i+1, a));
+	}
 
-    int T; cin >> T;
-    queue<int> Q;
-    while(T--) {
-        string cmd; cin >> cmd;
-        if(cmd == "push") {
-            int X; cin >> X;
-            Q.push(X);
-        }
-        else if(cmd == "pop") {
-            if(Q.empty()) cout << -1 << '\n';
-            else {
-                cout << Q.front() << '\n';
-                Q.pop();
-            }
-        }
-        else if(cmd == "size") {
-            cout << (int)Q.size() << '\n';
-        }
-        else if(cmd == "empty") {
-            cout << Q.empty() << '\n';
-        }
-        else if(cmd == "front") {
-            if(Q.empty()) cout << -1 << '\n';
-            else cout << Q.front() << '\n';
-        }
-        else if(cmd == "back") {
-            if(Q.empty()) cout << -1 << '\n';
-            else cout << Q.back() << '\n';
-        }
-    }
+	int val = d.front().second;
+	printf("%d ", d.front().first);
+	d.pop_front();
+	while (!d.empty()) {
+		if (val > 0) {
+			for (int i = 0; i < val; i++) {
+				d.push_back(make_pair(d.front().first, d.front().second));
+				d.pop_front();
+			}
+			val = d.back().second;
+			printf("%d ", d.back().first);
+			d.pop_back();
+		}
+		else {
+			for (int i = 0; i < abs(val); i++) {
+				d.push_front(make_pair(d.back().first, d.back().second));
+				d.pop_back();
+			}
+			val = d.front().second;
+			printf("%d ", d.front().first);
+			d.pop_front();
+		}
+	}
 
-    return 0;
+	return 0;
 }
