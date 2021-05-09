@@ -3,6 +3,7 @@
         "stack": "cpp",
         "xiosbase": "cpp",
         "ostream": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "fstream": "cpp"
     }
 }
