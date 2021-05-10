@@ -10,7 +10,6 @@
 
 using namespace std;
 
-// priority_queue<string> pQ;
 deque<string> Q;
 int ch[30];
 int cnt;
@@ -56,7 +55,6 @@ int main(){
     string origin=str;
     int k=0;
     for(int i =0 ; i <(int)origin.length();i++){
-        // cout<<"i:"<<i<<"str[i]:"<<str[i]<<endl;
         if(str[i]=='('){
             str[i]='A'+k;
             ch[k]=1;
@@ -75,7 +73,7 @@ int main(){
             S.pop();
         }
     }
-    // cout<<cnt;
+
     DFS(str,0);
 
 
@@ -85,10 +83,9 @@ int main(){
 
     while(!Q.empty()){
         string s= Q.front();
-        if(s!=origin) cout<<s<<endl;
+        if(s!=origin) cout<<s<<'\n';
         Q.pop_front();
     }
-    // cout<<cnt;
 
 
     return 0;
