@@ -13,11 +13,11 @@ using namespace std;
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    freopen("input.txt","rt",stdin);
+    // freopen("input.txt","rt",stdin);
     int n ; cin>>n;
     int highest=0;
-    double res;
-    int total=0;
+    long double res;
+    long long total=0;
     for(int i=0 ; i<n; i++){
         int tmp; cin>>tmp;
         if(tmp>highest) highest=tmp;
@@ -25,7 +25,7 @@ int main(){
     }
     total-=highest;
 
-    res=highest+((double)total/2);
+    res=highest+((long double)total/2);
     cout<<res;
 
 
