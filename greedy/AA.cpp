@@ -20,6 +20,10 @@ bool Count_group(int min_cost, int n, int k){
         if(vec[right+1]-vec[left]<=cost){
             while(vec[right+1]-vec[left]<=cost){
                 right++;
+                if(right>n-1){
+                    if(cnt>k) return false;
+                    else return true;
+                }
             }
         }
         else {

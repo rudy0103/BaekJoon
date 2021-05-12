@@ -28,7 +28,7 @@ int main(){
 
     int min_cost=0;
     sort(vec.begin(),vec.end());
-        for(int i=0; i<n-(k-1)-1;i++){
+    for(int i=0; i<n-(k-1)-1;i++){
         min_cost+=vec[i];
     }
 
