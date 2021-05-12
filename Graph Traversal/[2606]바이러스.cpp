@@ -12,7 +12,6 @@ int ch[101];
 vector<int> vec[101];
 
 void DFS(int a){
-    cout<<"DFS:"<<a<<endl;
     if(ch[a]==0){
         ch[a]=1;
         for(int i = 0; i<vec[a].size();i++){
@@ -33,7 +32,7 @@ void DFS(int a){
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    freopen("input.txt","rt",stdin);
+    // freopen("input.txt","rt",stdin);
     int n; cin>>n;
     int m; cin>>m;
     int i,s,d;
