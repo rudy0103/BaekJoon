@@ -2,11 +2,10 @@
 # 다리 놓기
 
 from sys import stdin as s
-s=open("input.txt", "rt")
+# s=open("input.txt", "rt")
 
 
 t= int(s.readline())
-t
 for _ in range(t):
     n,m = map(int, s.readline().split())
     k=1
@@ -15,4 +14,4 @@ for _ in range(t):
         k*=(m-i)
     for i in range(n,0,-1):
         l*=i
-    print(k/l)
+    print(int(k/l))

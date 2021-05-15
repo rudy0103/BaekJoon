@@ -1,10 +1,10 @@
 # https://www.acmicpc.net/problem/2749
 #피보나치 수 3
-from sys import stdin as s
+import sys
 
-# stdin=open("input.txt","rt")
+sys.stdin=open("input.txt","rt")
 
-n=int(s.readline())
+n=int(input())
 
 mod =1000000;
 period = int(mod/10*15);
