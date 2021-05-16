@@ -1,5 +1,8 @@
+# https://www.acmicpc.net/problem/10798
+# 세로읽기
+
 from sys import stdin as s
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 sl=[]
 max=0
