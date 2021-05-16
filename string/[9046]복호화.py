@@ -4,7 +4,7 @@
 from sys import stdin as s
 import operator
 
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 t=int(s.readline().strip())
 
