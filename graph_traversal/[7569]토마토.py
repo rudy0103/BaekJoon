@@ -5,7 +5,7 @@
 from sys import stdin as s
 from collections import deque
 
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 n,m,hei = map(int, s.readline().strip().split())
 
@@ -60,7 +60,6 @@ for k in range(hei):
             if box[k][i][j]>max:
                 max=box[k][i][j]
 
-print(box)
 
 if max==999999:
     print(-1)
