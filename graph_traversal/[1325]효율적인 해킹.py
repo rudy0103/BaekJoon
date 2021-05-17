@@ -1,7 +1,5 @@
 # https://www.acmicpc.net/problem/1325
 # 효율적인 해킹
-
-from os import rename
 from sys import stdin as s
 import sys
 # s=open("input.txt","rt")
