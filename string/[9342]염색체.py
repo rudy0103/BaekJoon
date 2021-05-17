@@ -2,8 +2,7 @@
 # 염색체
 
 from sys import stdin as s
-s=open("input.txt","rt")
-
+# s=open("input.txt","rt")
 t=int(s.readline().strip())
 
 
