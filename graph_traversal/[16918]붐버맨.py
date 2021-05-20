@@ -2,7 +2,7 @@
 # 붐버맨
 
 from sys import stdin as s
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 from collections import deque
 
 dx=[1,0,-1,0]
@@ -11,7 +11,7 @@ dy=[0,1,0,-1]
 r,c,n=map(int, s.readline().split())
 
 
-Map=[[0]*(c) for _ in range(r)]
+Map=[[0]*c for _ in range(r)]
 
 
 for i in range(r):
@@ -55,7 +55,7 @@ while sec<n:
 for i in range(r):
     for j in range(c):
         if Map[i][j]>0:
-            print("0",end="")
+            print("O",end="")
         else:
             print(".",end="")
     print()
