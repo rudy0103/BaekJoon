@@ -1,7 +1,7 @@
 from sys import stdin as s
 from collections import deque
 
-# s=open("input.txt","rt")
+s=open("input.txt","rt")
 
 h,w = map(int, s.readline().split())
 
@@ -18,6 +18,7 @@ for i in range(1,w+1):
 Q=deque()
 
 Q.append([0,0])
+Visited[0][0]=1
 
 dx1=[0,1,0,-1,1,1]
 dx2=[0,1,0,-1,-1,-1]
