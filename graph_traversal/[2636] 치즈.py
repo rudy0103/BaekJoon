@@ -2,7 +2,7 @@
 # 치즈
 from sys import stdin as s
 from collections import deque
-s= open("input.txt","rt")
+# s= open("input.txt","rt")
 
 h,w = map(int,s.readline().split())
 
