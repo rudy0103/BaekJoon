@@ -2,7 +2,7 @@
 # 꿀 따기
 
 from sys import prefix, stdin as s
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 n=int(s.readline())
 honey=[0]
 honey+=list(map(int,s.readline().split()))
@@ -36,7 +36,7 @@ while b2>0:
 
 # # case 3 꿀통이 가운데 있는 경우
 
-b1=0
+b1=1
 b2=n
 mid= int(b1+b2/2)
 
