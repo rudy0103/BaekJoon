@@ -1,14 +1,15 @@
+# https://www.acmicpc.net/problem/2470
+# 두 용액
+
 from sys import stdin as s
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 n=int(s.readline())
 
 l=list(map(int,s.readline().split()))
 l.sort()
 
-print(l)
 min=2147000000
-
 
 
 p1=0
