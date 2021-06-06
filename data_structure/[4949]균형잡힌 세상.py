@@ -3,7 +3,7 @@
 
 from os import terminal_size
 from sys import stdin as s
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 T=s.readline().strip('\n')
 
