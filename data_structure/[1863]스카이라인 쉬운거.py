@@ -4,7 +4,7 @@
 from sys import stdin as s
 import sys
 from collections import deque
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 n=int(s.readline())
 
@@ -20,14 +20,10 @@ for _ in range(n):
     elif st[-1]>y:
         while st and st[-1]>y:
             tmp=st.pop()
-        if not st and st[-1]==y:
+        if st[-1]==y:
             pass
         else:
-            if not st:
-                st.append(y)
-                if y != 0:
-                    cnt+=1
-            elif st[-1]<y:
+            if st[-1]<y:
                 st.append(y)
                 cnt+=1
 
