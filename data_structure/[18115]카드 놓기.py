@@ -23,8 +23,7 @@ for a in range(0,n):
     elif arr[a]==3:
         deq.append(a+1)
 
-
-for i in deq:
-    sys.stdout.write(str(i)+' ')
+while deq:
+    sys.stdout.write(str(deq.popleft())+' ')
 
 
