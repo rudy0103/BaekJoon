@@ -14,7 +14,7 @@ using namespace std;
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    freopen("input.txt","rt",stdin);
+    // freopen("input.txt","rt",stdin);
     int n; cin>>n;
     int k ; cin>>k;
     vector<int> vec;

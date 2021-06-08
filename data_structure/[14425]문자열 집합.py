@@ -1,3 +1,6 @@
+# https://www.acmicpc.net/problem/14425
+# 문자열 집합
+
 from sys import stdin as s
 import sys
 # s=open("input.txt","rt")
