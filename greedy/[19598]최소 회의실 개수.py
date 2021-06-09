@@ -2,32 +2,32 @@
 # 최소 회의실 개수
 from sys import stdin as s
 import heapq as hq
-# s=open("input.txt","rt")
+s=open("input.txt","rt")
 
 N=int(s.readline().strip())
 
 
-meeting=[]
-using=[]
+meetings=[]
+rooms=[]
 
 cnt=1
 
-hq.heappush(using,(0))
+hq.heappush(rooms,(0))
 
 for i in range(N):
     start,end=map(int,s.readline().split())
-    hq.heappush(meeting,(start,end))
+    hq.heappush(meetings,(start,end))
 
-while meeting:
-    meet=hq.heappop(meeting)
-    earliest=hq.heappop(using)
+while meetings:
+    start,end=hq.heappop(meetings)
+    earliest=hq.heappop(rooms)
 
-    if meet[0]>=earliest:
-        hq.heappush(using,meet[1])
+    if start>=earliest:
+        hq.heappush(rooms,end)
     else:
         cnt+=1
-        hq.heappush(using,earliest)
-        hq.heappush(using,meet[1])
+        hq.heappush(rooms,earliest)
+        hq.heappush(rooms,end)
 
 
 
