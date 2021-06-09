@@ -4,7 +4,7 @@
 from sys import stdin as s
 import sys
 import heapq as hq
-s=open("input.txt","rt")
+# s=open("input.txt","rt")
 
 T=int(s.readline().strip())
 
