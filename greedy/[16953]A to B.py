@@ -1,8 +1,7 @@
 # https://www.acmicpc.net/problem/16953
 # A->B
 import sys
-import heapq as hq
-sys.stdin=open("input.txt","rt")
+# sys.stdin=open("input.txt","rt")
 
 A,B=map(int,sys.stdin.readline().split())
 
