@@ -4,7 +4,7 @@
 
 import sys
 
-sys.stdin=open("input.txt","rt")
+# sys.stdin=open("input.txt","rt")
 
 N=int(input())
 
