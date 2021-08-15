@@ -2,6 +2,7 @@
 # 최소 회의실 개수
 from sys import stdin as s
 import heapq as hq
+
 # s=open("input.txt","rt")
 
 N=int(s.readline().strip())
